@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Mono;
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.section {
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+}
+
+.main-bg {
+    background-size: cover;
+    background-attachment: fixed;
+    background: url("../img/background.svg");
+}
+
+.main-content {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-box {
+    height: 36rem;
+    width: 36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+}
+
+.borderbox-content {
+    resize: none;
+    margin-top: 1rem;
+    width: 36rem;
+    height: 18rem;
+    padding: 0.8rem;
+}
+
+.top-borders,
+.bottom-borders {
+    display: flex;
+    justify-content: space-between;
+    width: 48rem;
+}
+
+.top-left-content,
+.top-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+.bottom-left-content,
+.bottom-right-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+.aditional {
+    display: flex;
+    flex-direction: column;
+}
+
+.aditional #submit_b {
+    font-size: 3.2rem;
+    border: 0.2rem solid white;
+    background: none;
+    color: white;
+}
+
+.aditional #submit_b:hover {
+    border-color: #290029;
+    background-color: #FFF;
+    color: black;
+    cursor: pointer;
+}
+
+.aditional #submit_b:active {
+    border-color: #5B005B;
+    background-color: #FAFAFA;
+    color: #222;
+}
+
+@media (max-width: 600px){
+
+    .top-borders,
+    .bottom-borders {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 32rem;
+    }
+
+    .border-box {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .aditional .borderbox-content{
+        height: 8rem;
+        width: 32rem;
+    }
+}
+
+@media (max-width: 340px){
+    .top-borders,
+    .bottom-borders {
+        width: 24rem;
+    }
+
+    .border-box {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .aditional .borderbox-content {
+        height: 8rem;
+        width: 24rem;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+    <title> Border radius visualizer </title>
+</head>
+<body>
+    <section class="main-bg section">
+        <div class="main-content">
+            <div class="top-borders">
+                <div class="top-left-content">
+                    <label for="top-left"> top left border </label>
+                    <input onchange="changing()" type="range" value="0" min="0" max="50" name="top-left" id="top-left-border">
+                </div>
+                <div class="top-right-content">    
+                    <label for="top-right"> top right border </label>
+                    <input onchange="changing()" type="range" value="0" min="0" max="50" name="top-right" id="top-right-border">
+                </div>
+            </div>
+            <div id="border-box" class="border-box">
+            </div>
+            <div class="bottom-borders">
+                <div class="bottom-left-content">
+                    <label for="bottom-left"> bottom left border </label>
+                    <input onchange="changing()" type="range" value="0" min="0" max="50" name="bottom-left" id="bottom-left-border">
+                </div>
+                <div class="bottom-right-content">
+                    <label for="bottom-right"> bottom right border </label>
+                    <input onchange="changing()" type="range" value="0" min="0" max="50" name="bottom-right" id="bottom-right-border">
+                </div>
+            </div>
+            <div class="aditional">
+                <textarea rows="5" cols="36" id="textarea" class="borderbox-content"></textarea>
+                <button id="submit_b" onclick="copy()"> COPY </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
